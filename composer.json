@@ -1,0 +1,51 @@
+{
+    "name": "diegosouza/laravel-zimbra",
+    "description": "A Laravel wrapper to interact with Zimbra API.",
+    "keywords": [
+        "laravel",
+        "zimbra",
+        "api"
+    ],
+    "homepage": "https://github.com/diegosouza/laravel-zimbra",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego de Souza Mendes",
+            "email": "diegosouza.br@gmail.com",
+            "homepage": "https://diegosouza.github.io",
+            "role": "Support Analyst / DevOps"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "laravel/framework": "5.8.*",
+        "zimbra-api/soap-api": "^1.1"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DiegoSouza\\Zimbra\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DiegoSouza\\Zimbra\\ZimbraServiceProvider"
+            ],
+            "aliases": {
+                "zimbra": "DiegoSouza\\Zimbra\\Facades\\Zimbra"
+            }
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DiegoSouza\\Zimbra\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
