@@ -2,8 +2,12 @@
 
 namespace DiegoSouza\Zimbra;
 
+use Illuminate\Support\Traits\ForwardsCalls;
+
 class ZimbraApiClient
 {
+    use ForwardsCalls;
+
     public $api;
 
     public function __construct($host, $user, $password)
@@ -15,5 +19,10 @@ class ZimbraApiClient
     public function getAllCos()
     {
         return $this->api->getAllCos()->cos;
+    }
+
+    public function __call($method, $parameters)
+    {
+        return $this->forwardCallTo($this->api, $method, $parameters);
     }
 }
