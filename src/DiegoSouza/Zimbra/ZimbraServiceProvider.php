@@ -10,15 +10,16 @@ class ZimbraServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $host = config('zimbra.host');
-        $user = config('zimbra.api.user');
-        $password = config('zimbra.api.password');
-        $logger = $this->app->log;
+        $host           = config('zimbra.host');
+        $emailDomain    = config('zimbra.domain');
+        $user           = config('zimbra.api.user');
+        $password       = config('zimbra.api.password');
+        $logger         = $this->app->log;
 
         $this->app->singleton(
             ZimbraApiClient::class,
-            function () use ($host, $user, $password, $logger) {
-                return new ZimbraApiClient($host, $user, $password, $logger);
+            function () use ($host, $emailDomain, $user, $password, $logger) {
+                return new ZimbraApiClient($host, $emailDomain, $user, $password, $logger);
             }
         );
 
