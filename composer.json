@@ -21,6 +21,9 @@
         "laravel/framework": ">=5.8",
         "zimbra-api/soap-api": "^1.1"
     },
+    "require-dev": {
+        "phpstan/phpstan": "^0.11.15"
+    },
     "autoload": {
         "psr-4": {
             "DiegoSouza\\Zimbra\\": "src/DiegoSouza/Zimbra"
@@ -35,6 +38,9 @@
                 "zimbra": "DiegoSouza\\Zimbra\\Facades\\Zimbra"
             }
         }
+    },
+    "scripts": {
+        "phpstan" : "php vendor/bin/phpstan analyse src --level 0 --no-interaction --ansi"
     },
     "config": {
         "sort-packages": true
