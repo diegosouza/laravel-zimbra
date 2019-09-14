@@ -2,7 +2,6 @@
 
 namespace DiegoSouza\Zimbra;
 
-use DiegoSouza\Zimbra\Facades\Zimbra;
 use DiegoSouza\Zimbra\ZimbraApiClient;
 use Illuminate\Support\ServiceProvider;
 
