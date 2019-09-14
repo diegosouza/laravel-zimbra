@@ -17,7 +17,7 @@ class ZimbraApiClient
 {
     use ForwardsCalls;
 
-    public $api;
+    protected $api;
     protected $logger;
     protected $domain;
 
