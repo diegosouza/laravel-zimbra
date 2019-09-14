@@ -2,8 +2,8 @@
 
 namespace DiegoSouza\Zimbra;
 
+use DiegoSouza\Zimbra\ZimbraApiClient;
 use Illuminate\Support\ServiceProvider;
-use ZimbraApiClient;
 
 class ZimbraServiceProvider extends ServiceProvider
 {
@@ -17,7 +17,7 @@ class ZimbraServiceProvider extends ServiceProvider
 
         $this->app->singleton(
             ZimbraApiClient::class,
-            static function () use ($host, $emailDomain, $user, $password, $logger) {
+            function () use ($host, $emailDomain, $user, $password, $logger) {
                 return new ZimbraApiClient($host, $emailDomain, $user, $password, $logger);
             }
         );
