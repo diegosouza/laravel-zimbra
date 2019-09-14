@@ -1,8 +1,8 @@
 # laravel-zimbra
 
 <p>
-    <a href="https://travis-ci.org/diegosouza/laravel-zimbra"><img src="https://img.shields.io/travis/diegosouza/laravel-zimbra/stable.svg" alt="Build Status"></img></a>
-    <a href="https://scrutinizer-ci.com/g/diegosouza/laravel-zimbra"><img src="https://img.shields.io/scrutinizer/g/diegosouza/laravel-zimbra.svg" alt="Quality Score"></img></a>
+    <a href="https://travis-ci.org/diegosouza/laravel-zimbra"><img src="https://travis-ci.org/diegosouza/laravel-zimbra.svg?branch=master" alt="Build Status"></img></a>
+    <a href="https://scrutinizer-ci.com/g/diegosouza/laravel-zimbra"><img src="https://scrutinizer-ci.com/g/diegosouza/laravel-zimbra/badges/quality-score.png?b=master" alt="Quality Score"></img></a>
     <a href="https://packagist.org/packages/diegosouza/laravel-zimbra"><img src="https://poser.pugx.org/diegosouza/laravel-zimbra/d/total.svg" alt="Total Downloads"></a>
     <a href="https://packagist.org/packages/diegosouza/laravel-zimbra"><img src="https://poser.pugx.org/diegosouza/laravel-zimbra/v/stable.svg" alt="Latest Stable Version"></a>
 </p>
