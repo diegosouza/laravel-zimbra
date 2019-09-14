@@ -192,6 +192,11 @@ class ZimbraApiClient
         return $this->api->getAllDomains()->domain;
     }
 
+    public function api()
+    {
+        return $this->api;
+    }
+
     public function __call($method, $parameters)
     {
         return $this->forwardCallTo($this->api, $method, $parameters);
