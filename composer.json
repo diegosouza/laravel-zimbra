@@ -21,10 +21,6 @@
         "laravel/framework": ">=5.8",
         "zimbra-api/soap-api": "^1.1"
     },
-    "require-dev": {
-        "mockery/mockery": "^1.0",
-        "phpunit/phpunit": "^8.0"
-    },
     "autoload": {
         "psr-4": {
             "DiegoSouza\\Zimbra\\": "src"
@@ -38,11 +34,6 @@
             "aliases": {
                 "zimbra": "DiegoSouza\\Zimbra\\Facades\\Zimbra"
             }
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "DiegoSouza\\Zimbra\\Tests\\": "tests"
         }
     },
     "config": {
